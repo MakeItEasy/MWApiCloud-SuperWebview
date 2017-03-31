@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MWApiCloud-SuperWebview_Example' do
+  pod 'MWApiCloud-SuperWebview', :path => '../'
+
+  target 'MWApiCloud-SuperWebview_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
