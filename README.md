@@ -12,7 +12,11 @@ APICloud文档请参考：[SuperWebview开发指南iOS](http://docs.apicloud.com
 
 ## Example
 
+### Example 1
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+### Example 2
+请参考Demo程序 [MWApiCloud-SuperWebview-Demo](https://github.com/makeiteasy/MWApiCloud-SuperWebview-Demo)
 
 ## Requirements
 
