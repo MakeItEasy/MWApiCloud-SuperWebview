@@ -4,6 +4,9 @@
 
 ## 简介
 
+此pod是为了在ios项目中使用APICloud时，可以不用手动导入APICloud的库，而只需要引入该pod就可以直接使用APICloud
+ 22 中的SuperWebview进行混合式开发。
+
 
 APICloud文档请参考：[SuperWebview开发指南iOS](http://docs.apicloud.com/Dev-Guide/SuperWebview-guide-for-ios)
 
