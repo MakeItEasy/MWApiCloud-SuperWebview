@@ -7,11 +7,13 @@
 //
 
 #import "MWAppDelegate.h"
+#import "APIManager.h"
 
 @implementation MWAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[APIManager manager] initSDKWithLaunchOptions:launchOptions];
     // Override point for customization after application launch.
     return YES;
 }

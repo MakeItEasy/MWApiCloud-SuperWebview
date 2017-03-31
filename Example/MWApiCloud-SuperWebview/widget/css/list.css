@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100%;
+}
+.wrapper .list{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border:1px solid #eee;
+    padding: 0 15px;
+}
+.wrapper .list img{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    align-self: center;
+}

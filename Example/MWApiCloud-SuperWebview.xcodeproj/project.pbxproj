@@ -20,10 +20,16 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		6A52786BEED57AB4DD90879D /* Pods_MWApiCloud_SuperWebview_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB6A67C15B6DCF84297B3FE /* Pods_MWApiCloud_SuperWebview_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		730B03D590EA781AA88C1344 /* libPods-MWApiCloud-SuperWebview_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F36C94BF5F3431801477F3BC /* libPods-MWApiCloud-SuperWebview_Tests.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		C8F278EC034808E849D8F756 /* Pods_MWApiCloud_SuperWebview_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9397EE402AE00D0812D4FE2 /* Pods_MWApiCloud_SuperWebview_Tests.framework */; };
+		885D0B6B1E8DE0BA000F1FE9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 885D0B6A1E8DE0BA000F1FE9 /* libz.tbd */; };
+		885D0B6D1E8DE0C4000F1FE9 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 885D0B6C1E8DE0C4000F1FE9 /* libicucore.tbd */; };
+		885D0B6F1E8DE0CC000F1FE9 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 885D0B6E1E8DE0CC000F1FE9 /* libstdc++.tbd */; };
+		885D0B711E8DE136000F1FE9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885D0B701E8DE136000F1FE9 /* WebKit.framework */; };
+		885D0B7F1E8DE960000F1FE9 /* MWWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885D0B7E1E8DE960000F1FE9 /* MWWebViewController.m */; };
+		885D0B811E8DEA18000F1FE9 /* widget in Resources */ = {isa = PBXBuildFile; fileRef = 885D0B801E8DEA18000F1FE9 /* widget */; };
+		8EB8F55133B75D365CEE2252 /* libPods-MWApiCloud-SuperWebview_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D4FDB94ECEA0B86AC27601 /* libPods-MWApiCloud-SuperWebview_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2BB6A67C15B6DCF84297B3FE /* Pods_MWApiCloud_SuperWebview_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWApiCloud_SuperWebview_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ACED4F8F210245CEB7F8F17 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		3C2786B194AE21CF0B5F6660 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3ACED4F8F210245CEB7F8F17 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3C2786B194AE21CF0B5F6660 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		53B01223FE8D5BF9EF6CDFD3 /* Pods-MWApiCloud-SuperWebview_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWApiCloud-SuperWebview_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MWApiCloud-SuperWebview_Example/Pods-MWApiCloud-SuperWebview_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MWApiCloud-SuperWebview_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MWApiCloud-SuperWebview_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,11 +67,19 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F95AD05647DA96D14EA9586 /* Pods-MWApiCloud-SuperWebview_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWApiCloud-SuperWebview_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MWApiCloud-SuperWebview_Tests/Pods-MWApiCloud-SuperWebview_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		865E620F0E3F1504E0422C11 /* MWApiCloud-SuperWebview.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "MWApiCloud-SuperWebview.podspec"; path = "../MWApiCloud-SuperWebview.podspec"; sourceTree = "<group>"; };
+		865E620F0E3F1504E0422C11 /* MWApiCloud-SuperWebview.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "MWApiCloud-SuperWebview.podspec"; path = "../MWApiCloud-SuperWebview.podspec"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		885D0B6A1E8DE0BA000F1FE9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		885D0B6C1E8DE0C4000F1FE9 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		885D0B6E1E8DE0CC000F1FE9 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		885D0B701E8DE136000F1FE9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		885D0B7D1E8DE960000F1FE9 /* MWWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWWebViewController.h; sourceTree = "<group>"; };
+		885D0B7E1E8DE960000F1FE9 /* MWWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWWebViewController.m; sourceTree = "<group>"; };
+		885D0B801E8DEA18000F1FE9 /* widget */ = {isa = PBXFileReference; lastKnownFileType = folder; path = widget; sourceTree = "<group>"; };
+		97D4FDB94ECEA0B86AC27601 /* libPods-MWApiCloud-SuperWebview_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MWApiCloud-SuperWebview_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4A49FAB1B92C22F7730F0F /* Pods-MWApiCloud-SuperWebview_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWApiCloud-SuperWebview_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MWApiCloud-SuperWebview_Example/Pods-MWApiCloud-SuperWebview_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D9397EE402AE00D0812D4FE2 /* Pods_MWApiCloud_SuperWebview_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWApiCloud_SuperWebview_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3219FDF9B064A3D1ECBF411 /* Pods-MWApiCloud-SuperWebview_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWApiCloud-SuperWebview_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MWApiCloud-SuperWebview_Tests/Pods-MWApiCloud-SuperWebview_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F36C94BF5F3431801477F3BC /* libPods-MWApiCloud-SuperWebview_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MWApiCloud-SuperWebview_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +87,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885D0B711E8DE136000F1FE9 /* WebKit.framework in Frameworks */,
+				885D0B6F1E8DE0CC000F1FE9 /* libstdc++.tbd in Frameworks */,
+				885D0B6D1E8DE0C4000F1FE9 /* libicucore.tbd in Frameworks */,
+				885D0B6B1E8DE0BA000F1FE9 /* libz.tbd in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				6A52786BEED57AB4DD90879D /* Pods_MWApiCloud_SuperWebview_Example.framework in Frameworks */,
+				8EB8F55133B75D365CEE2252 /* libPods-MWApiCloud-SuperWebview_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +105,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				C8F278EC034808E849D8F756 /* Pods_MWApiCloud_SuperWebview_Tests.framework in Frameworks */,
+				730B03D590EA781AA88C1344 /* libPods-MWApiCloud-SuperWebview_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,12 +147,16 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				885D0B701E8DE136000F1FE9 /* WebKit.framework */,
+				885D0B6E1E8DE0CC000F1FE9 /* libstdc++.tbd */,
+				885D0B6C1E8DE0C4000F1FE9 /* libicucore.tbd */,
+				885D0B6A1E8DE0BA000F1FE9 /* libz.tbd */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				2BB6A67C15B6DCF84297B3FE /* Pods_MWApiCloud_SuperWebview_Example.framework */,
-				D9397EE402AE00D0812D4FE2 /* Pods_MWApiCloud_SuperWebview_Tests.framework */,
+				97D4FDB94ECEA0B86AC27601 /* libPods-MWApiCloud-SuperWebview_Example.a */,
+				F36C94BF5F3431801477F3BC /* libPods-MWApiCloud-SuperWebview_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,6 +164,7 @@
 		6003F593195388D20070C39A /* Example for MWApiCloud-SuperWebview */ = {
 			isa = PBXGroup;
 			children = (
+				885D0B801E8DEA18000F1FE9 /* widget */,
 				6003F59C195388D20070C39A /* MWAppDelegate.h */,
 				6003F59D195388D20070C39A /* MWAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -151,6 +173,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				885D0B7D1E8DE960000F1FE9 /* MWWebViewController.h */,
+				885D0B7E1E8DE960000F1FE9 /* MWWebViewController.m */,
 			);
 			name = "Example for MWApiCloud-SuperWebview";
 			path = "MWApiCloud-SuperWebview";
@@ -250,6 +274,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "rugang6891@gmail.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = M47M55LKEL;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -279,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885D0B811E8DEA18000F1FE9 /* widget in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -395,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* MWAppDelegate.m in Sources */,
+				885D0B7F1E8DE960000F1FE9 /* MWWebViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* MWViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -524,6 +553,8 @@
 			baseConfigurationReference = BC4A49FAB1B92C22F7730F0F /* Pods-MWApiCloud-SuperWebview_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M47M55LKEL;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MWApiCloud-SuperWebview/MWApiCloud-SuperWebview-Prefix.pch";
 				INFOPLIST_FILE = "MWApiCloud-SuperWebview/MWApiCloud-SuperWebview-Info.plist";
@@ -539,6 +570,8 @@
 			baseConfigurationReference = 53B01223FE8D5BF9EF6CDFD3 /* Pods-MWApiCloud-SuperWebview_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M47M55LKEL;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MWApiCloud-SuperWebview/MWApiCloud-SuperWebview-Prefix.pch";
 				INFOPLIST_FILE = "MWApiCloud-SuperWebview/MWApiCloud-SuperWebview-Info.plist";

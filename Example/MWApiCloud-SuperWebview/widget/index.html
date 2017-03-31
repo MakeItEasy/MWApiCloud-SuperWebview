@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, initial-scale=1.0, width=device-width"/>
+    <meta name="format-detection" content="telephone=no, email=no, date=no, address=no">
+    <title>SuperWebview DEMO</title>
+    <link rel="stylesheet" type="text/css" href="css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../css/box.css" />
+    <script type="text/javascript" src="./script/public.js"></script>
+    <script type="text/javascript" src="./script/md5.js"></script>
+    <script type="text/javascript" src="./script/jquery-3.1.1.min.js"></script>
+    <style>
+    	p{
+    		color:#999;
+    		padding:5px;
+    	}
+    	body{ text-align:center}
+    </style>
+	<script type="text/javascript">
+    alert('hello world');
+	    apiready = function(){
+			fixStatusBar();//沉浸式效果，支持IOS7及Android4.4及以上
+			//  openContent('./html/login.html', 'login');//打开主frame
+	        $('year').innerHTML = new Date().getFullYear();
+	        api.addEventListener({
+			    name:'smartupdatefinish'
+			},function(ret,err){
+			    alert('云修复成功: ' + JSON.stringify(ret));
+			});
+	    };
+
+	    function getName() {
+		    return document.getElementById("userName").value;
+		}
+
+		function getPassword() {
+		    return hex_md5(document.getElementById("password").value);
+		}
+/*
+	    function login() {
+    	    <!--var url = "http://testsso.zhongyinginfo.com/zysso/sso/wz/patient/login";-->
+            <!--'e10adc3949ba59abbe56e057f20f883e'-->
+    	    var url = "http://192.168.5.12:9001/zysso/sso/wz/patient/login";
+			var name = getName();
+			var passwordMd5 = getPassword();
+
+            $.ajax({
+                type: 'post',
+                url: url,
+                contentType: "application/json",
+                dataType: "json",
+                data: JSON.stringify({
+					loginName: name,
+					mobileImei: '',
+					password: passwordMd5,
+					systemId: 4 }),
+                success: function(resp) {
+                    accessNative(resp);
+                },
+                error: function(emsg){
+                    alert(JSON.stringify(emsg));
+                }
+            });
+		}
+ */
+    function login() {
+        api.openWin({url: "widget://index.html", name: 'open in webpage'});
+    }
+
+		function accessNative(obj){
+	    	api.accessNative({
+	    		name: 'writeToken',
+                extra: obj
+	    	}, function(ret){
+				alert('登录成功！');
+	    		api.openWin({
+	    		    name: 'mainPage page',
+	    		    url: './html/mainPage.html'
+	    		});
+	    	});
+	    }
+	</script>
+</head>
+<body>
+    <div id="wrap">
+    	<div id='header'>
+            <div class="back" tapmode="back-active" onclick="api.closeWin()" >返回</div>
+            <h1>SuperWebview DEMO</h1>
+            <div class="adpt" ></div>
+        </div>
+        
+        <div id="main">
+            <form method="post" action="#">
+
+                <p>用户名:<input id="userName"
+                              type="text"
+                              style="height: 30px; width: 80%; margin-top: 10px; border:1px solid black"/>
+                </p>
+                <p>密码:<input id="password"
+                             type="text"
+                             style="height: 30px; width: 80%; margin-top: 10px; border:1px solid black"/>
+                </p>
+                <p>
+                    <input type="button"
+                           style="height: 30px; width: 100%; margin-top: 10px;"
+                           value="登录"
+                           onclick="login()">
+                </p>
+            </form>
+        </div>
+        <div id="footer">
+            <h5>APICloud Copyright &copy;<span id="year"></span> </h5>
+        </div>
+    </div>
+</body>
+</html>

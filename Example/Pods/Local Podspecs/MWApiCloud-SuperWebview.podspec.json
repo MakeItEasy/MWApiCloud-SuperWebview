@@ -1,0 +1,36 @@
+{
+  "name": "MWApiCloud-SuperWebview",
+  "version": "0.1.0",
+  "summary": "将APICloud中的SuperWebview开发相关的sdk做成一个pod，便于在工程中使用.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/makeiteasy/MWApiCloud-SuperWebview",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "MakeItEasy": "rugang6891@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/makeiteasy/MWApiCloud-SuperWebview.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MWApiCloud-SuperWebview/ApiCloud/**/*.{h,m,xml,css,html,js}",
+  "resources": "MWApiCloud-SuperWebview/ApiCloud/**/*.{png,jpg}",
+  "public_header_files": "MWApiCloud-SuperWebview/ApiCloud/**/*.h",
+  "vendored_libraries": [
+    "MWApiCloud-SuperWebview/ApiCloud/Modules/*.a",
+    "MWApiCloud-SuperWebview/ApiCloud/Engine/*.a"
+  ],
+  "frameworks": "WebKit",
+  "ios": {
+    "libraries": [
+      "z",
+      "icucore",
+      "stdc++"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - MWApiCloud-SuperWebview (0.1.0)
+
+DEPENDENCIES:
+  - MWApiCloud-SuperWebview (from `../`)
+
+EXTERNAL SOURCES:
+  MWApiCloud-SuperWebview:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MWApiCloud-SuperWebview: 5e03a3d2c5e2c8e64dacfed36e122e62348bf648
+
+PODFILE CHECKSUM: 137773ff38098fdf4e78bffb5d825f2630078c85
+
+COCOAPODS: 1.2.0

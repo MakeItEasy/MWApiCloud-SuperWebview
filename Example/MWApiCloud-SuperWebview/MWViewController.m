@@ -7,6 +7,7 @@
 //
 
 #import "MWViewController.h"
+#import "MWWebViewController.h"
 
 @interface MWViewController ()
 
@@ -26,4 +27,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)openWebView:(id)sender {
+    // 这里的widget://表示widget的根目录路径
+    NSString *url = @"widget://index.html";
+    NSString *name = @"web view controller";
+    MWWebViewController *webVC = [MWWebViewController windowContainerWithAttribute:@{@"url":url, @"name":name}];
+    [webVC startLoad];
+    [self.navigationController pushViewController:webVC animated:YES];
+}
 @end
