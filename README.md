@@ -1,9 +1,11 @@
 # MWApiCloud-SuperWebview
 
-[![CI Status](http://img.shields.io/travis/rugang6891@gmail.com/MWApiCloud-SuperWebview.svg?style=flat)](https://travis-ci.org/rugang6891@gmail.com/MWApiCloud-SuperWebview)
-[![Version](https://img.shields.io/cocoapods/v/MWApiCloud-SuperWebview.svg?style=flat)](http://cocoapods.org/pods/MWApiCloud-SuperWebview)
-[![License](https://img.shields.io/cocoapods/l/MWApiCloud-SuperWebview.svg?style=flat)](http://cocoapods.org/pods/MWApiCloud-SuperWebview)
-[![Platform](https://img.shields.io/cocoapods/p/MWApiCloud-SuperWebview.svg?style=flat)](http://cocoapods.org/pods/MWApiCloud-SuperWebview)
+[![GitHub tag](https://img.shields.io/github/tag/makeiteasy/MWApiCloud-SuperWebview.svg)]()
+
+## 简介
+
+
+APICloud文档请参考：[SuperWebview开发指南iOS](http://docs.apicloud.com/Dev-Guide/SuperWebview-guide-for-ios)
 
 ## Example
 
@@ -11,18 +13,23 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+* 主工程需要关闭 `bitcode`，在 `Build Settings` 中找到 `Enable Bitcode`,选择 `NO`
+
 ## Installation
 
-MWApiCloud-SuperWebview is available through [CocoaPods](http://cocoapods.org). To install
+MWApiCloud-SuperWebview 目前没有提交到 [CocoaPods](http://cocoapods.org)。 To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "MWApiCloud-SuperWebview"
+pod "MWApiCloud-SuperWebview", :git => 'https://github.com/MakeItEasy/MWApiCloud-SuperWebview.git'
 ```
 
 ## Author
 
-rugang6891@gmail.com, rugang6891@gmail.com
+MakeItEasy, rugang6891@gmail.com
+
+Blog: http://makeiteasy.github.io
+
 
 ## License
 
