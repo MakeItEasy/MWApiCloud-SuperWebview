@@ -18,15 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+此pod是为了在ios项目中使用APICloud时，可以不用手动导入APICloud的库，而只需要引入该pod就可以直接使用APICloud
+中的SuperWebview进行混合式开发。
                        DESC
 
   s.homepage         = 'https://github.com/makeiteasy/MWApiCloud-SuperWebview'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'MakeItEasy' => 'rugang6891@gmail.com' }
   s.source           = { :git => 'https://github.com/makeiteasy/MWApiCloud-SuperWebview.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+# s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
@@ -34,7 +34,10 @@ TODO: Add long description of the pod here.
   s.resources = 'MWApiCloud-SuperWebview/ApiCloud/**/*.{png,jpg}'
 
   s.public_header_files = 'MWApiCloud-SuperWebview/ApiCloud/**/*.h'
+  # 本pod导出的第三方library
   s.vendored_libraries = 'MWApiCloud-SuperWebview/ApiCloud/Modules/*.a', 'MWApiCloud-SuperWebview/ApiCloud/Engine/*.a'
+  # 系统framework
   s.frameworks = 'WebKit'
+  # 系统library
   s.ios.libraries = 'z', 'icucore', 'stdc++'
 end
