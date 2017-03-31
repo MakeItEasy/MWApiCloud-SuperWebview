@@ -24,7 +24,7 @@ MWApiCloud-SuperWebview 目前没有提交到 [CocoaPods](http://cocoapods.org)�
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "MWApiCloud-SuperWebview", :git => 'https://github.com/MakeItEasy/MWApiCloud-SuperWebview.git'
+pod "MWApiCloud-SuperWebview", :git => 'https://github.com/MakeItEasy/MWApiCloud-SuperWebview.git', :tag => '0.1.0'
 ```
 
 ## Author
