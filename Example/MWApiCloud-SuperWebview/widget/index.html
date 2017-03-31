@@ -18,7 +18,6 @@
     	body{ text-align:center}
     </style>
 	<script type="text/javascript">
-    alert('hello world');
 	    apiready = function(){
 			fixStatusBar();//沉浸式效果，支持IOS7及Android4.4及以上
 			//  openContent('./html/login.html', 'login');//打开主frame
@@ -37,34 +36,9 @@
 		function getPassword() {
 		    return hex_md5(document.getElementById("password").value);
 		}
-/*
-	    function login() {
-    	    <!--var url = "http://testsso.zhongyinginfo.com/zysso/sso/wz/patient/login";-->
-            <!--'e10adc3949ba59abbe56e057f20f883e'-->
-    	    var url = "http://192.168.5.12:9001/zysso/sso/wz/patient/login";
-			var name = getName();
-			var passwordMd5 = getPassword();
-
-            $.ajax({
-                type: 'post',
-                url: url,
-                contentType: "application/json",
-                dataType: "json",
-                data: JSON.stringify({
-					loginName: name,
-					mobileImei: '',
-					password: passwordMd5,
-					systemId: 4 }),
-                success: function(resp) {
-                    accessNative(resp);
-                },
-                error: function(emsg){
-                    alert(JSON.stringify(emsg));
-                }
-            });
-		}
- */
+    
     function login() {
+        alert('登录成功');
         api.openWin({url: "widget://index.html", name: 'open in webpage'});
     }
 
@@ -83,13 +57,7 @@
 	</script>
 </head>
 <body>
-    <div id="wrap">
-    	<div id='header'>
-            <div class="back" tapmode="back-active" onclick="api.closeWin()" >返回</div>
-            <h1>SuperWebview DEMO</h1>
-            <div class="adpt" ></div>
-        </div>
-        
+    <div id="wrap">        
         <div id="main">
             <form method="post" action="#">
 

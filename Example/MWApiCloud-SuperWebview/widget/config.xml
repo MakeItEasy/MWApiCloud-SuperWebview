@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget id="A6945166059806" version="0.0.1">
-  <name>H5Demo5</name>
+  <name>APICloud-SuperWebview Demo</name>
   <description></description>
-  <author email="380279023@qq.com" href="http://www.apicloud.com">Wencent</author>
+  <author email="" href="http://makeiteasy.github.io">MakeItEasy</author>
   <content src="index.html"/>
   <preference name="autoLaunch" value="true"/>
   <preference name="autoUpdate" value="true"/>
